@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+}
+.homeHeading{
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 20px;
+}
+.listBtn {
+text-align: center;
+padding: 10px 20px;
+background-color: green;
+border-radius: 8px;
+color: white;
+}
+.listBtn:hover {
+  background-color: royalblue;
+}

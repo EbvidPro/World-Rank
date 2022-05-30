@@ -1,0 +1,63 @@
+.backArrow {
+    cursor: pointer;
+    margin: 20px 30px;
+}
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.Details {
+    display: grid;
+    padding: 30px 10px;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+.flag {
+    text-align: center;
+}
+.flag h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 10px 10px 30px;
+}
+.info > div {
+    flex: 50%;
+}
+.info h2 {
+    font-weight: 600;
+}
+.info p {
+    color: var(--text-color-secondary);
+}
+@media screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    .Details {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .container {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+    } 
+}
