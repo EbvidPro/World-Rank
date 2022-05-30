@@ -68,11 +68,11 @@ const Details = ({ country }) => {
                             <p>Area(km)</p>
                         </div>
                         <div className={styles.currencyInfo}>
-                            <h2>{country.currenci.name} ({country.currencies[0].symbol})</h2>
+                            <h2>{country.currencies[0].name} ({country.currencies[0].symbol})</h2>
                             <p>Currency</p>
                         </div>
                         <div className={styles.languageInfo}>
-                            <h2>{country.languages.name} </h2>
+                            <h2>{country.languages[0].name} </h2>
                             <p>Language</p>
                         </div>
                     </div>
