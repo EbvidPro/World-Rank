@@ -70,9 +70,9 @@ const List = ({ countries }) => {
                 </div>
             </div>
             <div className={styles.countriesList} >
-                {filteredCountries.map((country) => <div className={styles.row} key={country} >
+                {filteredCountries.map((country, index) => <div className={styles.row} key={country.alpha3Code} >
                     <div className={styles.name}>
-                        <Link href={'/list/' + country.alpha3Code} key={country.alpha3Code}>
+                        <Link href={'/list/' + country.alpha3Code} >
                             <a className={styles.single}>
                                 <Image
                                     src={country.flags.svg}
