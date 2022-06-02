@@ -68,11 +68,13 @@ const Details = ({ country }) => {
                             <p>Area(km)</p>
                         </div>
                         <div className={styles.currencyInfo}>
-                            <h2>{country.currencies.map(currencyName => currencyName.name)} ({country.currencies.map(currencySymbol => currencySymbol.symbol)})</h2>
+                            {country.currencies.map((currency, index) => <h2 key={index}> {currency.name} ({currency.symbol}) </h2>)}
+                            {/* <h2>{country.currencies.map(currencyName => currencyName.name)} ({country.currencies.map(currencySymbol => currencySymbol.symbol)})</h2> */}
                             <p>Currency</p>
                         </div>
                         <div className={styles.languageInfo}>
-                            <h2>{country.languages.map(languageName => languageName.name)} </h2>
+                            {country.languages.map((languageName, id) => <h2 key={id}>{languageName.name}</h2>)}
+                            {/* <h2>{country.languages.map(languageName => languageName.name)} </h2> */}
                             <p>Language</p>
                         </div>
                     </div>
