@@ -35,6 +35,7 @@ export const getStaticProps = async (context) => {
 const Details = ({ country }) => {
     return (
         <>
+            {console.log({ country })}
             <Head>
                 <title>{country.name} Details</title>
                 <meta name='keywords' content='Ranks of Countries'></meta>
@@ -67,14 +68,27 @@ const Details = ({ country }) => {
                             <h2>{country.area} </h2>
                             <p>Area(km)</p>
                         </div>
-                        <div className={styles.continent}>
+                        <div className={styles.region}>
                             <h2>{country.region}</h2>
                             <p>Region</p>
+                        </div>
+                        <div className={styles.subRegion}>
+                            <h2>{country.subregion}</h2>
+                            <p>Sub Region</p>
                         </div>
                         <div className={styles.nativeName}>
                             <h2>{country.nativeName}</h2>
                             <p>Native Name</p>
                         </div>
+                        <div className={styles.independent}>
+                            <h2>{country.independent.toString()}</h2>
+                            <p>Independent</p>
+                        </div>
+                        <div className={styles.capital}>
+                            <h2>{country.capital}</h2>
+                            <p>Capital</p>
+                        </div>
+
                         {/* <div className={styles.currencyInfo}>
                             {country.currencies.map((currency, index) => <h2 key={index}> {currency.name} ({currency.symbol}) </h2>)}
                             <p>Currency</p>
