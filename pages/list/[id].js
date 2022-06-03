@@ -88,6 +88,10 @@ const Details = ({ country }) => {
                             <h2>{country.capital}</h2>
                             <p>Capital</p>
                         </div>
+                        <div className={styles.timeZone}>
+                            <h2>{country.timezones}</h2>
+                            <p>Time Zone</p>
+                        </div>
 
                         {/* <div className={styles.currencyInfo}>
                             {country.currencies.map((currency, index) => <h2 key={index}> {currency.name} ({currency.symbol}) </h2>)}
