@@ -67,6 +67,14 @@ const Details = ({ country }) => {
                             <h2>{country.area} </h2>
                             <p>Area(km)</p>
                         </div>
+                        <div className={styles.continent}>
+                            <h2>{country.region}</h2>
+                            <p>Region</p>
+                        </div>
+                        <div className={styles.nativeName}>
+                            <h2>{country.nativeName}</h2>
+                            <p>Native Name</p>
+                        </div>
                         {/* <div className={styles.currencyInfo}>
                             {country.currencies.map((currency, index) => <h2 key={index}> {currency.name} ({currency.symbol}) </h2>)}
                             <p>Currency</p>
